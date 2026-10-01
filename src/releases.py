@@ -4,7 +4,7 @@ from html.parser import HTMLParser
 from urllib.request import Request, urlopen
 
 
-RELEASE_CALENDAR_URL = "https://uk.topps.com/pages/release-calendar"
+RELEASE_CALENDAR_URL = "https://uk.topps.com/release-calendar"
 
 
 class PageTextParser(HTMLParser):
