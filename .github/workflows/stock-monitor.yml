@@ -1,0 +1,16 @@
+name: Test stock monitor
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run Topps Collectors UK stock monitor
+        run: |
+          curl --fail-with-body \
+            --request GET \
+            --header "Authorization: Bearer ${{ secrets.MONITOR_SECRET }}" \
+            "https://topps-uk-monitor.lukesilver.workers.dev/run-stock-monitor"
