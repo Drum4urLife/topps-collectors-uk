@@ -1,4 +1,4 @@
-name: Test stock monitor
+name: UK stock monitor
 
 on:
   workflow_dispatch:
