@@ -15,4 +15,4 @@ jobs:
           curl --fail-with-body \
             --request GET \
             --header "Authorization: Bearer ${{ secrets.MONITOR_SECRET }}" \
-            "https://topps-uk-monitor.lukesilver.workers.dev/request-context-test"
+            "https://topps-uk-monitor.lukesilver.workers.dev/run-scd-stock-monitor"
